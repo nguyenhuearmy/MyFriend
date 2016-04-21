@@ -1,0 +1,19 @@
+<div  class="container" style="background-color: rgb(255, 231, 186)">
+    <div class="col-md-10 row col-md-offset-1">
+        <div class="col-md-4">
+            <%= image_tag @friend.avatar.url(:medium) %>
+        </div>
+        <div class="col-md-8">
+            <p>
+               <strong>name :</strong>     <%= @friend.name %><br>
+               <strong>birthday :</strong> <%= @friend.birthday %><br>
+               <strong>email :</strong>    <%= @friend.email %><br>
+               <strong>phone :</strong>    <%= @friend.phone %><br>
+               <strong>feeling :</strong>  <%= @friend.feeling %><br>
+            </p>
+            <%= link_to "Edit", edit_friend_path(@friend) %>
+            <%= link_to "Delete", friend_path(@friend), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xoá?"} %>
+        </div>
+        <%= link_to "All Friend", friends_path %>
+    </div>
+</div>

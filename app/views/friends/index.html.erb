@@ -1,0 +1,27 @@
+<div class="row">
+  <% @friends.each do |friend| %>
+    <div class="col-sm-6 col-md-5 friend">
+      <p>
+        <%= image_tag friend.avatar.url(:thumb) %>
+   <%= link_to friend.name, friend %>
+  </p>
+  <p>
+    <strong>Birthday:</strong>
+    <%= friend.birthday %>
+  </p>
+  <p>
+    <strong>Email:</strong>
+    <%= friend.email %><br>
+  </p>
+  <p>
+    <strong>Phone:</strong>
+    <%= friend.phone %><br>
+  </p>
+  <p>
+    <strong>Feeling:</strong>
+    <%= friend.feeling %><br>
+  </p>
+    </div>
+<% end %>
+</div>
+<%= link_to "New Friend", new_friend_path %>
