@@ -1,28 +1,53 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+--User story 1 : tạo tài khoản của ứng dụng
+feature : Là người dùng 
+          Tôi muốn tạo 1 tài khoản để đăng nhập vào hệ thống 
+          Vì vậy tôi có thể có 1 tài khoản của ứng dụng này
+          
+    Task:
+    -cài đặt gem devise để xác thực người cho tài khoản của ứng dụng
+    -trình bày layout cho các form đăng nhập và đăng kí tài khoản
+    -viết test cucumber cho chức năng sign in trong thư mục feature
+    
+--User story 2 : tạo 1 danh sách bạn bè
+feature : Là người dùng
+          Tôi muốn có có 1 danh sách bạn bè với tên, ngày sinh nhật, email, số điện thoại, cảm nhận về người bạn đó của người dùng
+          Vì vậy tôi tạo được 1 người bạn bè
+    Task:
+    -viết hàm create, new để tạo danh sách bạn bè của mỗi người dùng trong file controller.rb
+    -tạo mỗi bạn bè gồm các trường: name, birthday, email, phone, feeling 
+    -sử dụng model Friend với các trường ở trên tạo friends
+    -dùng lệnh controller Friends
+    -tạo file _form.html.rb để tạo form nhập các trường của mỗi bạn bè
+    
+--User story 3 : xóa 1 bạn bè khỏi danh sách bạn bè
+feature : Là người dùng
+          Tôi muốn xóa 1 bạn bè ra khỏi danh sách bạn bè của tôi
+          Vì vậy 1 bạn bè được xóa khỏi danh sách bạn bè
+    Task:
+    -trong phần controller friend viết hàm destroy để xóa 1 bạn bè
+    -tạo nút là "delete" ở mỗi 1 bạn bè để có thể xóa bạn bè đó khỏi danh sách bạn bè 1
+    
+--User story 4 : thêm avatar cho một bạn bè
+feature : Là một người dùng
+          Tôi muốn mỗi bạn bè cần có một avatar đại diện cho mình
+          Vì vậy tôi muốn đẩy được ảnh của bạn bè đó lên làm avata
+    Task:
+    -cài đặt gem paperclip để up load ảnh
+    -cho trường avatar vào file form như các trường khác
+    -chỉnh sửa avatar như các trường thông tin khác của người bạn bè đó.
+    
+--User story 5 : chỉnh sửa giao diện
+feature : Là một người dùng
+          Tôi muốn giao diện của mình được đẹp và dễ sử dụng hơn
+          Vì vậy tôi có thể dễ dàng sử dụng mà không cần đọc tài liệu
+    Task:
+    -thiết kế css và nhúng vào các file form, index, edit,...
+    -sử dụng các các class sẵn có của bootstrap để có giao diện linh hoạt.
+    -cài đặt bootstrap như 1 gem thông thường của rails và sử dụng các class có sẵn của bootstrap để tạo css.
+    
+--User story 6 : viết test tự động cucumber
+feature : tôi là người phát triền phần mềm
+          Tôi muốn phần mềm của mình được an toàn, gặp ít lỗi và sự cố
+          Vì vậy tôi sẽ viết test tự động cho phần mềm của mình
+    Task:
+    -cài đặt gem cucumber, spec... bằng cách thêm gem cucumber vào gemfile và chạy
