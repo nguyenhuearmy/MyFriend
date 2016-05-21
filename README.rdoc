@@ -79,7 +79,7 @@ Thành viên nhóm và phân công :
  
  Tài liệu hướng dẫn sử dụng phần mền :
  
- Tên dự ánlà:
+ Tên dự ánlà: My Friend
  
 Các trường thông tin của một người bạn:
 -	Tên.
