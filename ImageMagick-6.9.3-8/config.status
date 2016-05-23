@@ -932,8 +932,8 @@ cat >>"$ac_tmp/subs1.awk" <<\_ACAWK &&
 S["am__EXEEXT_FALSE"]=""
 S["am__EXEEXT_TRUE"]="#"
 S["LTLIBOBJS"]=""
-S["MAGICK_LIBS"]="    -lfreetype    -ljpeg   -lpng12       -lfontconfig -lfreetype      -lXext -lXt   -lSM -lICE -lX11   -lbz2   -lpangocairo-1.0 -lpango-1.0 -lcairo "\
-"-lgobject-2.0 -lglib-2.0    -lxml2    -lz    -lm -lgomp    "
+S["MAGICK_LIBS"]="    -lfreetype    -ljpeg   -lpng12       -lfontconfig -lfreetype      -lXext    -lSM -lICE -lX11   -lbz2   -lpangocairo-1.0 -lpango-1.0 -lcairo -lgo"\
+"bject-2.0 -lglib-2.0    -lxml2    -lz    -lm -lgomp    "
 S["MAGICK_LDFLAGS"]="-L/usr/local/lib  "
 S["MAGICK_PCFLAGS"]="-fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16"
 S["MAGICK_CPPFLAGS"]="-I/usr/local/include/ImageMagick-6"
@@ -941,8 +941,8 @@ S["MAGICK_CXXFLAGS"]="-g -O2 -pthread"
 S["MAGICK_CFLAGS"]="-I/usr/include/libxml2   -I/usr/include/libpng12    -pthread -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64"\
 "-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12   -I/usr/include/freetype2   -I/usr/include/fre"\
 "etype2      -fopenmp -g -O2 -Wall -mtune=core-avx-i -fexceptions -pthread -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16"
-S["MAGICK_DEP_LIBS"]="    -lfreetype    -ljpeg   -lpng12       -lfontconfig -lfreetype      -lXext -lXt   -lSM -lICE -lX11   -lbz2   -lpangocairo-1.0 -lpango-1.0 -lcairo "\
-"-lgobject-2.0 -lglib-2.0    -lxml2    -lz    -lm -lgomp    "
+S["MAGICK_DEP_LIBS"]="    -lfreetype    -ljpeg   -lpng12       -lfontconfig -lfreetype      -lXext    -lSM -lICE -lX11   -lbz2   -lpangocairo-1.0 -lpango-1.0 -lcairo -lgo"\
+"bject-2.0 -lglib-2.0    -lxml2    -lz    -lm -lgomp    "
 S["OSX_GCOV_LDFLAG"]=""
 S["MAGICK_FEATURES"]="DPC Cipher OpenMP"
 S["MAGICK_DELEGATES"]="bzlib mpeg fontconfig freetype jng jpeg pango png ps x xml zlib"
@@ -1349,7 +1349,7 @@ S["MAGICK_LIB_VERSION_NUMBER"]="2,0,0"
 S["MAGICK_LIB_VERSION_TEXT"]="6.9.3"
 S["MAGICK_LIB_VERSION"]="0x020000"
 S["PACKAGE_VERSION_ADDENDUM"]="-8"
-S["PACKAGE_RELEASE_DATE"]="2016-04-15"
+S["PACKAGE_RELEASE_DATE"]="2016-05-23"
 S["PACKAGE_LIB_VERSION_NUMBER"]="6,9,3,8"
 S["PACKAGE_LIB_VERSION"]="0x693"
 S["PACKAGE_CHANGE_DATE"]="20160322"

@@ -28,14 +28,14 @@
   <configure name="INCLUDE_PATH" value="/usr/local/include/ImageMagick-6"/>
   <configure name="LDFLAGS" value="-L/usr/local/lib  "/>
   <configure name="LIBRARY_PATH" value="/usr/local/lib/ImageMagick-6.9.3"/>
-  <configure name="LIBS" value="    -lfreetype    -ljpeg   -lpng12       -lfontconfig -lfreetype      -lXext -lXt   -lSM -lICE -lX11   -lbz2   -lpangocairo-1.0 -lpango-1.0 -lcairo -lgobject-2.0 -lglib-2.0    -lxml2    -lz    -lm -lgomp    "/>
+  <configure name="LIBS" value="    -lfreetype    -ljpeg   -lpng12       -lfontconfig -lfreetype      -lXext    -lSM -lICE -lX11   -lbz2   -lpangocairo-1.0 -lpango-1.0 -lcairo -lgobject-2.0 -lglib-2.0    -lxml2    -lz    -lm -lgomp    "/>
   <configure name="LIB_VERSION_NUMBER" value="6,9,3,8"/>
   <configure name="LIB_VERSION" value="0x693"/>
   <configure name="NAME" value="ImageMagick"/>
   <configure name="PCFLAGS" value="-fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16"/>
   <configure name="PREFIX" value="/usr/local"/>
   <configure name="QuantumDepth" value="16"/>
-  <configure name="RELEASE_DATE" value="2016-04-15"/>
+  <configure name="RELEASE_DATE" value="2016-05-23"/>
   <configure name="SHAREARCH_PATH" value="/usr/local/lib/ImageMagick-6.9.3/config-Q16"/>
   <configure name="SHARE_PATH" value="/usr/local/share/ImageMagick-6"/>
   <configure name="TARGET_CPU" value="x86_64"/>
