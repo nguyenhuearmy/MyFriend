@@ -1,107 +1,93 @@
---User story 1 : tạo tài khoản của ứng dụng
-feature : Là người dùng 
-          Tôi muốn tạo 1 tài khoản để đăng nhập vào hệ thống 
-          Vì vậy tôi có thể có 1 tài khoản của ứng dụng này
-          
-    Task:
-    -cài đặt gem devise để xác thực người cho tài khoản của ứng dụng
-    -trình bày layout cho các form đăng nhập và đăng kí tài khoản
-    -viết test cucumber cho chức năng sign in trong thư mục feature
-    
---User story 2 : tạo 1 danh sách bạn bè
-feature : Là người dùng
-          Tôi muốn có có 1 danh sách bạn bè với tên, ngày sinh nhật, email, số điện thoại, cảm nhận về người bạn đó của người dùng
-          Vì vậy tôi tạo được 1 người bạn bè
-    Task:
-    -viết hàm create, new để tạo danh sách bạn bè của mỗi người dùng trong file controller.rb
-    -tạo mỗi bạn bè gồm các trường: name, birthday, email, phone, feeling 
-    -sử dụng model Friend với các trường ở trên tạo friends
-    -dùng lệnh controller Friends
-    -tạo file _form.html.rb để tạo form nhập các trường của mỗi bạn bè
-    
---User story 3 : xóa 1 bạn bè khỏi danh sách bạn bè
-feature : Là người dùng
-          Tôi muốn xóa 1 bạn bè ra khỏi danh sách bạn bè của tôi
-          Vì vậy 1 bạn bè được xóa khỏi danh sách bạn bè
-    Task:
-    -trong phần controller friend viết hàm destroy để xóa 1 bạn bè
-    -tạo nút là "delete" ở mỗi 1 bạn bè để có thể xóa bạn bè đó khỏi danh sách bạn bè 1
-    
---User story 4 : thêm avatar cho một bạn bè
-feature : Là một người dùng
-          Tôi muốn mỗi bạn bè cần có một avatar đại diện cho mình
-          Vì vậy tôi muốn đẩy được ảnh của bạn bè đó lên làm avata
-    Task:
-    -cài đặt gem paperclip để up load ảnh
-    -cho trường avatar vào file form như các trường khác
-    -chỉnh sửa avatar như các trường thông tin khác của người bạn bè đó.
-   
---User story 5 : chỉnh sửa 1 bạn bè
-feature : Là 1 người dùng
-          Tôi muốn chỉnh sửa các trường của 1 người bạn sau khi đã tạo xong các trường của người bạn đó
-          Vì vậy tôi có thể sửa các trường đó tùy ý
-     Task:
-     -tại file controller viết hàm edit
-     -viết hàm update
-     -tạo nút edit tại mỗi trang hiển thị của 1 bạn bè
-   
---User story 6 : chỉnh sửa giao diện
-feature : Là một người dùng
-          Tôi muốn giao diện của mình được đẹp và dễ sử dụng hơn
-          Vì vậy tôi có thể dễ dàng sử dụng mà không cần đọc tài liệu
-    Task:
-    -thiết kế css và nhúng vào các file form, index, edit,...
-    -sử dụng các các class sẵn có của bootstrap để có giao diện linh hoạt.
-    -cài đặt bootstrap như 1 gem thông thường của rails và sử dụng các class có sẵn của bootstrap để tạo css.
-    
---User story 7 : viết test tự động cucumber
-feature : tôi là người phát triền phần mềm
-          Tôi muốn phần mềm của mình được an toàn, gặp ít lỗi và sự cố
-          Vì vậy tôi sẽ viết test tự động cho phần mềm của mình
-    Task:
-    -cài đặt gem cucumber, spec... bằng cách thêm gem cucumber vào gemfile và chạy
-    
-    
+–User story 1 : tạo tài khoản của ứng dụng feature : Là người dùng
+
+      Tôi muốn tạo 1 tài khoản để đăng nhập vào hệ thống 
+      Vì vậy tôi có thể có 1 tài khoản của ứng dụng này
+
+Task:
+-cài đặt gem devise để xác thực người cho tài khoản của ứng dụng
+-trình bày layout cho các form đăng nhập và đăng kí tài khoản
+-viết test cucumber cho chức năng sign in trong thư mục feature
+
+–User story 2 : tạo 1 danh sách bạn bè feature : Là người dùng
+
+      Tôi muốn có có 1 danh sách bạn bè với tên, ngày sinh nhật, email, số điện thoại, cảm nhận về người bạn đó của người dùng
+      Vì vậy tôi tạo được 1 người bạn bè
+Task:
+-viết hàm create, new để tạo danh sách bạn bè của mỗi người dùng trong file controller.rb
+-tạo mỗi bạn bè gồm các trường: name, birthday, email, phone, feeling 
+-sử dụng model Friend với các trường ở trên tạo friends
+-dùng lệnh controller Friends
+-tạo file _form.html.rb để tạo form nhập các trường của mỗi bạn bè
+
+–User story 3 : xóa 1 bạn bè khỏi danh sách bạn bè feature : Là người dùng
+
+      Tôi muốn xóa 1 bạn bè ra khỏi danh sách bạn bè của tôi
+      Vì vậy 1 bạn bè được xóa khỏi danh sách bạn bè
+Task:
+-trong phần controller friend viết hàm destroy để xóa 1 bạn bè
+-tạo nút là "delete" ở mỗi 1 bạn bè để có thể xóa bạn bè đó khỏi danh sách bạn bè 1
+
+–User story 4 : thêm avatar cho một bạn bè feature : Là một người dùng
+
+      Tôi muốn mỗi bạn bè cần có một avatar đại diện cho mình
+      Vì vậy tôi muốn đẩy được ảnh của bạn bè đó lên làm avata
+Task:
+-cài đặt gem paperclip để up load ảnh
+-cho trường avatar vào file form như các trường khác
+-chỉnh sửa avatar như các trường thông tin khác của người bạn bè đó.
+
+–User story 5 : chỉnh sửa 1 bạn bè feature : Là 1 người dùng
+
+     Tôi muốn chỉnh sửa các trường của 1 người bạn sau khi đã tạo xong các trường của người bạn đó
+     Vì vậy tôi có thể sửa các trường đó tùy ý
+Task:
+-tại file controller viết hàm edit
+-viết hàm update
+-tạo nút edit tại mỗi trang hiển thị của 1 bạn bè
+
+–User story 6 : chỉnh sửa giao diện feature : Là một người dùng
+
+      Tôi muốn giao diện của mình được đẹp và dễ sử dụng hơn
+      Vì vậy tôi có thể dễ dàng sử dụng mà không cần đọc tài liệu
+Task:
+-thiết kế css và nhúng vào các file form, index, edit,...
+-sử dụng các các class sẵn có của bootstrap để có giao diện linh hoạt.
+-cài đặt bootstrap như 1 gem thông thường của rails và sử dụng các class có sẵn của bootstrap để tạo css.
+
+–User story 7 : viết test tự động cucumber feature : tôi là người phát triền phần mềm
+
+      Tôi muốn phần mềm của mình được an toàn, gặp ít lỗi và sự cố
+      Vì vậy tôi sẽ viết test tự động cho phần mềm của mình
+Task:
+-cài đặt gem cucumber, spec... bằng cách thêm gem cucumber vào gemfile và chạy
+
 Thành viên nhóm và phân công :
 
- - Nguyến Thị Huệ      : viết user story 6, 4, 5, 7, viết các user story trên pivaotal tracker.
- 
- - Vũ Thị Thùy         : viết user story 6, 2
- 
- - Nguyễn Thị Tâm      : viết user story 1, 6.
- 
- - Bùi Thị Trung Thủy  : viết user story 1, 6
- 
- - Phùng Thị Lương     : viết user story  1, 2, 7, viết tài liệu hướng dẫn sử dụng cho phần mền
- 
- - Hà Thị Hiện         : viết user story 7, 6.
- 
- 
- Tài liệu hướng dẫn sử dụng phần mền :
- 
- Tên dự ánlà: My Friend
- 
-Các trường thông tin của một người bạn:
--	Tên.
--	Ngày tháng năm sinh.
--	Email.
--	Số điện thoại.
--	Cảm xúc.
+- Nguyến Thị Huệ      : viết user story 6, 4, 5, 7, viết các user story trên pivaotal tracker.
 
-Các chức năng của dự án: 
--	Thêm, sửa, xóa thông tin bạn bè.
--	Cập nhật ảnh của bạn bè.
+- Vũ Thị Thùy         : viết user story 6, 2
 
-Hướng dẫn sử dụng phần mềm.
--	Để tạo tài khoản bạn click vào nút “Sign up now!” ở ngoài màn hình chính thì bạn sẽ nhìn thấy một trang cho bạn tạo tài khoản như sau:
- 
-Bạn nhập thông tin về Email, Password và Password confirmation.Sau đó bạn click vào “Sign up” để hoàn thành việc tạo tài khoản.
--	Để đăng nhập bạn click vào nút “Log in” sau đó bạn nhập thông tin về Email và Password như khi bạn tạo tài khoản.
+- Nguyễn Thị Tâm      : viết user story 1, 6.
+
+- Bùi Thị Trung Thủy  : viết user story 1, 6
+
+- Phùng Thị Lương     : viết user story  1, 2, 7, viết tài liệu hướng dẫn sử dụng cho phần mền
+
+- Hà Thị Hiện         : viết user story 7, 6.
+
+Tài liệu hướng dẫn sử dụng phần mền :
+
+Tên dự ánlà: My Friend
+Các trường thông tin của một người bạn: -	Tên. -	Ngày tháng năm sinh. -	Email. -	Số điện thoại. -	Cảm xúc.
+
+Các chức năng của dự án: -	Thêm, sửa, xóa thông tin bạn bè. -	Cập nhật ảnh của bạn bè.
+
+Hướng dẫn sử dụng phần mềm. -	Để tạo tài khoản bạn click vào nút “Sign up now!” ở ngoài màn hình chính thì bạn sẽ nhìn thấy một trang cho bạn tạo tài khoản như sau:
+
+Bạn nhập thông tin về Email, Password và Password confirmation.Sau đó bạn click vào “Sign up” để hoàn thành việc tạo tài khoản. -	Để đăng nhập bạn click vào nút “Log in” sau đó bạn nhập thông tin về Email và Password như khi bạn tạo tài khoản.
 
 -	Để tạo thêm 1 người bạn vào danh sách bạn bè bạn click vào nút “ New Friend” thì bạn sẽ thấy xuất hiện 1 màn hình như hình bên dưới.
- 
-Bạn nhập tên , email, số điện thoại , cảm xúc của người bạn của bạn . Bạn lựa chọn ngày tháng năm sinh và ảnh bạn bè của bạn.
-Cuối cùng bạn click vào nút “Create Friend” thì bạn sẽ nhìn thấy toàn bộ thông tin mà bạn vừa nhập về bạn bè của bạn.
--	Để cập nhật thông tin về bạn bè, bạn click vào nút “edit”. Sau khi sửa thông tin xong bạn lưu lại cập nhật bằng cách click vào nút “Update Friend”
+
+Bạn nhập tên , email, số điện thoại , cảm xúc của người bạn của bạn . Bạn lựa chọn ngày tháng năm sinh và ảnh bạn bè của bạn. Cuối cùng bạn click vào nút “Create Friend” thì bạn sẽ nhìn thấy toàn bộ thông tin mà bạn vừa nhập về bạn bè của bạn. -	Để cập nhật thông tin về bạn bè, bạn click vào nút “edit”. Sau khi sửa thông tin xong bạn lưu lại cập nhật bằng cách click vào nút “Update Friend”
 
 -	Để xóa thông tin của một người bạn, bạn click vào nút “delete”.
