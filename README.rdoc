@@ -1,3 +1,51 @@
+Thành viên nhóm và phân công :
+
+ - Nguyến Thị Huệ      : viết user story 6, 4, 5, 7, viết các user story trên pivaotal tracker.
+ 
+ - Vũ Thị Thùy         : viết user story 6, 2
+ 
+ - Nguyễn Thị Tâm      : viết user story 1, 6.
+ 
+ - Bùi Thị Trung Thủy  : viết user story 1, 6
+ 
+ - Phùng Thị Lương     : viết user story :viết tài liệu hướng dẫn sử dụng cho phần mền
+ 
+ - Hà Thị Hiện         : viết user story 7, 6.
+ 
++ link heroku : https://damp-garden-82020.herokuapp.com/
++ Test tự động cucumber chức năng log in.
+
+Tài liệu hướng dẫn sử dụng phần mền :
+ 
+ Tên dự ánlà: My Friend
+ 
+Các trường thông tin của một người bạn:
+-	Tên.
+-	Ngày tháng năm sinh.
+-	Email.
+-	Số điện thoại.
+-	Cảm xúc.
+
+Các chức năng của dự án: 
+-	Thêm, sửa, xóa thông tin bạn bè.
+-	Cập nhật ảnh của bạn bè.
+
+Hướng dẫn sử dụng phần mềm.
+-	Để tạo tài khoản bạn click vào nút “Sign up now!” ở ngoài màn hình chính thì bạn sẽ nhìn thấy một trang cho bạn tạo tài khoản như sau:
+ 
+Bạn nhập thông tin về Email, Password và Password confirmation.Sau đó bạn click vào “Sign up” để hoàn thành việc tạo tài khoản.
+-	Để đăng nhập bạn click vào nút “Log in” sau đó bạn nhập thông tin về Email và Password như khi bạn tạo tài khoản.
+
+-	Để tạo thêm 1 người bạn vào danh sách bạn bè bạn click vào nút “ New Friend” thì bạn sẽ thấy xuất hiện 1 màn hình như hình bên dưới.
+ 
+Bạn nhập tên , email, số điện thoại , cảm xúc của người bạn của bạn . Bạn lựa chọn ngày tháng năm sinh và ảnh bạn bè của bạn.
+Cuối cùng bạn click vào nút “Create Friend” thì bạn sẽ nhìn thấy toàn bộ thông tin mà bạn vừa nhập về bạn bè của bạn.
+-	Để cập nhật thông tin về bạn bè, bạn click vào nút “edit”. Sau khi sửa thông tin xong bạn lưu lại cập nhật bằng cách click vào nút “Update Friend”
+
+-	Để xóa thông tin của một người bạn, bạn click vào nút “delete”.
+
+
+
 --User story 1 : tạo tài khoản của ứng dụng
 feature : Là người dùng 
           Tôi muốn tạo 1 tài khoản để đăng nhập vào hệ thống 
@@ -61,47 +109,6 @@ feature : tôi là người phát triền phần mềm
     Task:
     -cài đặt gem cucumber, spec... bằng cách thêm gem cucumber vào gemfile và chạy
     
-    
-Thành viên nhóm và phân công :
-
- - Nguyến Thị Huệ      : viết user story 6, 4, 5, 7, viết các user story trên pivaotal tracker.
- 
- - Vũ Thị Thùy         : viết user story 6, 2
- 
- - Nguyễn Thị Tâm      : viết user story 1, 6.
- 
- - Bùi Thị Trung Thủy  : viết user story 1, 6
- 
- - Phùng Thị Lương     : viết user story  1, 2, 7, viết tài liệu hướng dẫn sử dụng cho phần mền
- 
- - Hà Thị Hiện         : viết user story 7, 6.
+   
  
  
- Tài liệu hướng dẫn sử dụng phần mền :
- 
- Tên dự ánlà: My Friend
- 
-Các trường thông tin của một người bạn:
--	Tên.
--	Ngày tháng năm sinh.
--	Email.
--	Số điện thoại.
--	Cảm xúc.
-
-Các chức năng của dự án: 
--	Thêm, sửa, xóa thông tin bạn bè.
--	Cập nhật ảnh của bạn bè.
-
-Hướng dẫn sử dụng phần mềm.
--	Để tạo tài khoản bạn click vào nút “Sign up now!” ở ngoài màn hình chính thì bạn sẽ nhìn thấy một trang cho bạn tạo tài khoản như sau:
- 
-Bạn nhập thông tin về Email, Password và Password confirmation.Sau đó bạn click vào “Sign up” để hoàn thành việc tạo tài khoản.
--	Để đăng nhập bạn click vào nút “Log in” sau đó bạn nhập thông tin về Email và Password như khi bạn tạo tài khoản.
-
--	Để tạo thêm 1 người bạn vào danh sách bạn bè bạn click vào nút “ New Friend” thì bạn sẽ thấy xuất hiện 1 màn hình như hình bên dưới.
- 
-Bạn nhập tên , email, số điện thoại , cảm xúc của người bạn của bạn . Bạn lựa chọn ngày tháng năm sinh và ảnh bạn bè của bạn.
-Cuối cùng bạn click vào nút “Create Friend” thì bạn sẽ nhìn thấy toàn bộ thông tin mà bạn vừa nhập về bạn bè của bạn.
--	Để cập nhật thông tin về bạn bè, bạn click vào nút “edit”. Sau khi sửa thông tin xong bạn lưu lại cập nhật bằng cách click vào nút “Update Friend”
-
--	Để xóa thông tin của một người bạn, bạn click vào nút “delete”.
